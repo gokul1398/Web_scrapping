@@ -12,5 +12,10 @@ pipeline {
                 sh 'web_scrapper.py'
             }
         }
+        stage('echo') {
+            steps {
+                sh 'echo $PATH'
+            }
+        }
     }
 }
