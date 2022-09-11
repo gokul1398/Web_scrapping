@@ -4,12 +4,12 @@ pipeline {
     stages {
          stage('Vesrion') {
             steps {
-                sh 'python --version'
+                sh 'python --versioudo apt install python3.8n'
             }
         }
         stage('run1') {
             steps {
-                sh '@echo off python3 web_scrapper.py'
+                sh 'python3.8 web_scrapper.py'
             }
         }
     }
