@@ -7,8 +7,6 @@ pipeline {
                 sh 'python --version'
             }
         }
-    }
-    stages {
         stage('run1') {
             steps {
                 sh 'web_scrapper.py'
