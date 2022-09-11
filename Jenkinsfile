@@ -9,7 +9,7 @@ pipeline {
         }
         stage('run1') {
             steps {
-                sh 'python3 web_scrapper.py'
+                sh '@echo off python3 web_scrapper.py'
             }
         }
     }
